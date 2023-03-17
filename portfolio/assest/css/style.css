@@ -560,6 +560,10 @@ video {
   margin-top: 170px;
 }
 
+.mt-\[220px\]{
+  margin-top: 220px;
+}
+
 .mt-\[22px\]{
   margin-top: 22px;
 }
@@ -568,12 +572,32 @@ video {
   margin-top: 45px;
 }
 
+.mt-\[50px\]{
+  margin-top: 50px;
+}
+
 .mt-\[63px\]{
   margin-top: 63px;
 }
 
+.mt-\[70px\]{
+  margin-top: 70px;
+}
+
+.mt-\[88px\]{
+  margin-top: 88px;
+}
+
 .flex{
   display: flex;
+}
+
+.w-\[30\%\]{
+  width: 30%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[1110px\]{
@@ -600,6 +624,14 @@ video {
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -612,8 +644,16 @@ video {
   gap: 65px;
 }
 
+.gap-y-\[35px\]{
+  row-gap: 35px;
+}
+
 .gap-y-\[65px\]{
   row-gap: 65px;
+}
+
+.gap-y-\[20px\]{
+  row-gap: 20px;
 }
 
 .rounded-\[55px\]{
@@ -705,6 +745,8 @@ video {
   color: rgb(188 188 188 / var(--tw-text-opacity));
 }
 
+/* body tag Configuration */
+
 .main-body{
   --tw-bg-opacity: 1;
   background-color: rgb(15 22 36 / var(--tw-bg-opacity));
@@ -723,6 +765,8 @@ video {
   }
 }
 
+/* Common Outer Container */
+
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -730,6 +774,8 @@ video {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* Project Cards Design */
 
 .project-cards{
   width: 41%;
@@ -740,6 +786,8 @@ video {
   --tw-shadow-colored: 0px 0px 12px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+/* common h3 header */
 
 .com-h3{
   position: relative;
@@ -764,6 +812,8 @@ video {
   background-image: linear-gradient(270deg,#13ADC7 0%,#6978D1 66.67%, #945DD6 100%);
 }
 
+/* Buttons from Project cards */
+
 .project-btns{
   margin-top: 25px;
   display: inline-block;
@@ -775,6 +825,58 @@ video {
   padding-bottom: 14px;
   font-size: 14px;
   line-height: 1.75;
+}
+
+/* Skill graph rod */
+
+.skill-graph{
+  position: relative;
+  height: 22px;
+  width: 100%;
+  border-radius: 55px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 41 80 / var(--tw-bg-opacity));
+}
+
+.skill-graph::before{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+  width: 75%;
+  border-radius: 83px;
+  content: var(--tw-content);
+  background-image: linear-gradient(270deg,#13ADC7 0%,#6978D1 66.67%, #945DD6 100%);
+}
+
+/* bullet list span */
+
+.disc-span{
+  position: relative;
+  padding-left: 17px;
+}
+
+.disc-span::before{
+  position: absolute;
+  left: 0px;
+  top: 0.75rem;
+  height: 6px;
+  width: 6px;
+  border-radius: 9999px;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:w-\[25\%\]::before{
+  content: var(--tw-content);
+  width: 25%;
+}
+
+.before\:w-\[50\%\]::before{
+  content: var(--tw-content);
+  width: 50%;
 }
 
 @media (max-width: 768px){
