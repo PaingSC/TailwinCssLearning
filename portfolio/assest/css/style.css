@@ -552,6 +552,10 @@ video {
   margin-top: 100px;
 }
 
+.mt-\[15px\]{
+  margin-top: 15px;
+}
+
 .mt-\[170px\]{
   margin-top: 170px;
 }
@@ -564,24 +568,32 @@ video {
   margin-top: 45px;
 }
 
+.mt-\[63px\]{
+  margin-top: 63px;
+}
+
 .flex{
   display: flex;
 }
 
-.w-screen{
-  width: 100vw;
-}
-
-.max-w-\[1320px\]{
-  max-width: 1320px;
+.max-w-\[1110px\]{
+  max-width: 1110px;
 }
 
 .max-w-\[700px\]{
   max-width: 700px;
 }
 
+.max-w-\[880px\]{
+  max-width: 880px;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -598,6 +610,10 @@ video {
 
 .gap-\[65px\]{
   gap: 65px;
+}
+
+.gap-y-\[65px\]{
+  row-gap: 65px;
 }
 
 .rounded-\[55px\]{
@@ -658,12 +674,20 @@ video {
   padding-bottom: 30px;
 }
 
+.pb-40{
+  padding-bottom: 10rem;
+}
+
 .pl-\[40px\]{
   padding-left: 40px;
 }
 
 .pl-\[73px\]{
   padding-left: 73px;
+}
+
+.pr-\[10px\]{
+  padding-right: 10px;
 }
 
 .text-lg{
@@ -702,9 +726,55 @@ video {
 .container{
   margin-left: auto;
   margin-right: auto;
-  max-width: 1320px;
+  max-width: 1044px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.project-cards{
+  width: 41%;
+  border-radius: 33px 0px;
+  padding: 15px;
+  padding-bottom: 30px;
+  --tw-shadow: 0px 0px 12px 0px #FFFFFF;
+  --tw-shadow-colored: 0px 0px 12px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.com-h3{
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.75;
+  line-height: 88.5%;
+}
+
+.com-h3::before{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  display: block;
+  height: 2.5px;
+  width: 55%;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  content: var(--tw-content);
+  background-image: linear-gradient(270deg,#13ADC7 0%,#6978D1 66.67%, #945DD6 100%);
+}
+
+.project-btns{
+  margin-top: 25px;
+  display: inline-block;
+  border-radius: 83px;
+  background-image: linear-gradient(270deg,#13ADC7 0%,#6978D1 66.67%, #945DD6 100%);
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.75;
 }
 
 @media (max-width: 768px){

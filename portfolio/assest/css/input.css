@@ -11,5 +11,16 @@
   @apply font-body font-semibold text-base text-main bg-background sm:text-base-sm;
 }
 .container{
-  @apply max-w-[1320px] px-[20px] mx-auto;
+  @apply max-w-[1044px] px-[20px] mx-auto;
+}
+.project-cards{
+  @apply w-[41%] shadow-[0px_0px_12px_0px_#FFFFFF] p-[15px] pb-[30px] rounded-[33px_0px];
+}
+
+.com-h3{
+  @apply relative text-lg leading-[88.5%] pt-[16px] pb-[20px] text-center before:block before:absolute before:w-[55%] before:h-[2.5px]  before:bottom-0 before:left-[50%] before:translate-x-[-50%] before:bg-[linear-gradient(270deg,#13ADC7_0%,#6978D1_66.67%,_#945DD6_100%)];
+}
+
+.project-btns{
+  @apply text-[14px] leading-[1.75] px-[42px] py-[14px] mt-[25px] inline-block rounded-[83px] bg-[linear-gradient(270deg,#13ADC7_0%,#6978D1_66.67%,_#945DD6_100%)]
 }
