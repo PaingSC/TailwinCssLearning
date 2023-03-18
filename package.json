@@ -1,0 +1,16 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build portfolio/assest/css/input.css -o portfolio/assest/css/style.css",
+    "watch-css":"npx tailwindcss -i portfolio/assest/css/input.css -o portfolio/assest/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
