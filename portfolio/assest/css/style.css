@@ -543,23 +543,34 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
 }
 
-.mx-\[-30px\]{
-  margin-left: -30px;
-  margin-right: -30px;
+.left-0{
+  left: 0px;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.top-0{
+  top: 0px;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .mx-\[-20px\]{
   margin-left: -20px;
   margin-right: -20px;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mt-\[100px\]{
@@ -606,6 +617,10 @@ video {
   margin-top: 88px;
 }
 
+.mt-\[200px\]{
+  margin-top: 200px;
+}
+
 .flex{
   display: flex;
 }
@@ -626,20 +641,16 @@ video {
   width: 30%;
 }
 
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-full{
-  width: 100%;
-}
-
 .w-\[35\%\]{
   width: 35%;
 }
 
 .w-\[65\%\]{
   width: 65%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[1110px\]{
@@ -686,6 +697,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-\[12\%\]{
+  gap: 12%;
+}
+
 .gap-\[20px\]{
   gap: 20px;
 }
@@ -696,14 +711,6 @@ video {
 
 .gap-\[65px\]{
   gap: 65px;
-}
-
-.gap-\[10\%\]{
-  gap: 10%;
-}
-
-.gap-\[12\%\]{
-  gap: 12%;
 }
 
 .gap-y-\[20px\]{
@@ -720,6 +727,11 @@ video {
 
 .rounded-\[55px\]{
   border-radius: 55px;
+}
+
+.bg-\[\#0F1624\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 22 36 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/portfolio\/assest\/img\/hero_bg\.png\'\)\]{
@@ -781,8 +793,8 @@ video {
   padding-bottom: 30px;
 }
 
-.pb-40{
-  padding-bottom: 10rem;
+.pb-\[55px\]{
+  padding-bottom: 55px;
 }
 
 .pl-\[40px\]{
@@ -805,16 +817,17 @@ video {
   padding-right: 8%;
 }
 
-.pb-\[55px\]{
-  padding-bottom: 55px;
-}
-
 .text-center{
   text-align: center;
 }
 
 .text-right{
   text-align: right;
+}
+
+.text-ftr{
+  font-size: 28px;
+  line-height: 1.75;
 }
 
 .text-lg{
@@ -827,19 +840,13 @@ video {
   line-height: 1.75;
 }
 
-.text-ftr{
-  font-size: 28px;
-  line-height: 1.75;
-}
-
-.text-ftr-sm{
-  font-size: 20px;
-  line-height: 1.75;
-}
-
 .text-subcolor{
   --tw-text-opacity: 1;
   color: rgb(188 188 188 / var(--tw-text-opacity));
+}
+
+.opacity-\[0\.8\]{
+  opacity: 0.8;
 }
 
 /* body tag Configuration */
@@ -1058,6 +1065,11 @@ video {
 }
 
 @media (max-width: 768px){
+  .sm\:text-ftr-sm{
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
   .sm\:text-lg-sm{
     font-size: 18px;
     line-height: 1.75;
@@ -1065,11 +1077,6 @@ video {
 
   .sm\:text-ttl-sm{
     font-size: 28px;
-    line-height: 1.75;
-  }
-
-  .sm\:text-ftr-sm{
-    font-size: 20px;
     line-height: 1.75;
   }
 }
