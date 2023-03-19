@@ -543,6 +543,10 @@ video {
   }
 }
 
+.relative{
+  position: relative;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -592,6 +596,10 @@ video {
   display: flex;
 }
 
+.w-\[25\%\]{
+  width: 25%;
+}
+
 .w-\[30\%\]{
   width: 30%;
 }
@@ -620,6 +628,10 @@ video {
   flex-wrap: wrap;
 }
 
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -644,16 +656,16 @@ video {
   gap: 65px;
 }
 
+.gap-y-\[20px\]{
+  row-gap: 20px;
+}
+
 .gap-y-\[35px\]{
   row-gap: 35px;
 }
 
 .gap-y-\[65px\]{
   row-gap: 65px;
-}
-
-.gap-y-\[20px\]{
-  row-gap: 20px;
 }
 
 .rounded-\[55px\]{
@@ -726,8 +738,24 @@ video {
   padding-left: 73px;
 }
 
+.pl-\[8\%\]{
+  padding-left: 8%;
+}
+
 .pr-\[10px\]{
   padding-right: 10px;
+}
+
+.pr-\[8\%\]{
+  padding-right: 8%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-lg{
@@ -869,6 +897,26 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+/* about year point */
+
+.year-point{
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.year-point::after{
+  position: absolute;
+  bottom: -7px;
+  left: calc(50% - 10px);
+  height: 20px;
+  width: 20px;
+  border-radius: 9999px;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .before\:w-\[25\%\]::before{
   content: var(--tw-content);
   width: 25%;
@@ -877,6 +925,58 @@ video {
 .before\:w-\[50\%\]::before{
   content: var(--tw-content);
   width: 50%;
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:bottom-0::after{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:left-\[50\%\]::after{
+  content: var(--tw-content);
+  left: 50%;
+}
+
+.after\:left-\[8px\]::after{
+  content: var(--tw-content);
+  left: 8px;
+}
+
+.after\:left-auto::after{
+  content: var(--tw-content);
+  left: auto;
+}
+
+.after\:right-\[8px\]::after{
+  content: var(--tw-content);
+  right: 8px;
+}
+
+.after\:h-\[8px\]::after{
+  content: var(--tw-content);
+  height: 8px;
+}
+
+.after\:w-\[95\%\]::after{
+  content: var(--tw-content);
+  width: 95%;
+}
+
+.after\:translate-x-\[-50\%\]::after{
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:bg-white::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 @media (max-width: 768px){

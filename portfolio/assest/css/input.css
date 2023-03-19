@@ -39,3 +39,8 @@
 .disc-span{
   @apply relative pl-[17px] before:absolute before:w-[6px] before:h-[6px] before:bg-white before:left-0 before:top-3 before:rounded-full;
 }
+
+/* about year point */
+.year-point{
+  @apply block relative pb-[15px] after:absolute after:w-[20px] after:h-[20px] after:bg-white after:rounded-full after:bottom-[-7px] after:left-[calc(50%-10px)];
+}
